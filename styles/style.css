@@ -561,6 +561,6 @@ footer {
           -ms-flex-align: center;
           align-items: center;
           text-align: center; }
-        .copyrights .copyrightsWrap .copyrightsRight a .copyrightsRight i:hover {
+        .copyrights .copyrightsWrap .copyrightsRight a i:hover {
           color: white;
           background: #f16d7f; }
