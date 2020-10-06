@@ -1,4 +1,182 @@
-* {
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+body {
+    font-family: 'Lato', sans-serif;
 }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100px;
+    width: 1140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+    .logoContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .logo {
+            width: 59px;
+            height: 51px;
+        }
+
+        .bran {
+            color: #222222;
+            font-size: 27px;
+            font-weight: 300;
+            line-height: 51px;
+
+            span {
+                font-weight: 400;
+                color: #f16d7f;
+            }
+        }
+    }
+
+    .search {
+        margin-left: 100px;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        overflow: hidden;
+
+        .searchBrowse {
+            height: inherit;
+            padding: 12px;
+            font-size: 14px;
+            color: #222222;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            border-right: 1px solid #e6e6e6;
+        }
+
+        input {
+            height: inherit;
+            padding: 0 3px;
+            border: none;
+            outline: none;
+        }
+
+        button {
+            height: inherit;
+            padding: 0 8px;
+            border: 0;
+            background: none;
+            border-left: 1px solid #e6e6e6;
+        }
+    }
+
+    .headerCart {
+        // width: 32px;
+        // height: 29px;
+        margin-left: auto;
+        margin-right: 25px;
+    }
+
+    .btnMyAccount {
+        padding: 15px;
+        background-color: #f16d7f;
+        color: white;
+        border: none;
+    }
+}
+
+.nav {
+    border-top: 1px solid #ececec;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navLink {
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #222222;
+    }
+
+    .navLink:not(:last-child) {
+        margin-right: 45px;
+    }
+}
+
+.mainBanner {
+    height: 610px;
+    background-color: #e8e8e8;
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        background-image: url(../assets/topHeaderBack.png);
+        background-repeat: no-repeat;
+        background-position: right 10px;
+
+        .brandHeadingsContain {
+            border-left: 10px solid #f16d7f;
+            overflow: hidden;
+            padding-left: 10px;
+
+            h1 {
+                font-weight: 900;
+                font-size: 60px;
+                line-height: 41px;
+            }
+
+            h2 {
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 32px;
+                margin-top: 19px;
+            }
+        }
+    }
+}
+
+.offers {
+    display: flex;
+    justify-content: space-between;
+
+    .partOffers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .smallOffer,
+        .bigOffer {
+            margin-top: 25px;
+            position: relative;
+
+            .label {
+                text-transform: uppercase;
+                position: absolute;
+                top: 25px;
+                padding: 15px 20px;
+                background: white;
+
+                .labelTop {
+                    font-size: 18px;
+                    color: #222222;
+                    font-weight: 700;
+                }
+
+                .labelBottom {
+                    font-size: 30px;
+                    color: #f16d7f;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
+

@@ -1,3 +1,169 @@
-* {
-  padding: 0;
-  margin: 0; }
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+body {
+  font-family: 'Lato', sans-serif; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto; }
+
+.header {
+  height: 100px;
+  width: 1140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto; }
+  .header .logoContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .logoContainer .logo {
+      width: 59px;
+      height: 51px; }
+    .header .logoContainer .bran {
+      color: #222222;
+      font-size: 27px;
+      font-weight: 300;
+      line-height: 51px; }
+      .header .logoContainer .bran span {
+        font-weight: 400;
+        color: #f16d7f; }
+  .header .search {
+    margin-left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden; }
+    .header .search .searchBrowse {
+      height: inherit;
+      padding: 12px;
+      font-size: 14px;
+      color: #222222;
+      background-color: #f9f9f9;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border-right: 1px solid #e6e6e6; }
+    .header .search input {
+      height: inherit;
+      padding: 0 3px;
+      border: none;
+      outline: none; }
+    .header .search button {
+      height: inherit;
+      padding: 0 8px;
+      border: 0;
+      background: none;
+      border-left: 1px solid #e6e6e6; }
+  .header .headerCart {
+    margin-left: auto;
+    margin-right: 25px; }
+  .header .btnMyAccount {
+    padding: 15px;
+    background-color: #f16d7f;
+    color: white;
+    border: none; }
+
+.nav {
+  border-top: 1px solid #ececec;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav .navLink {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222222; }
+  .nav .navLink:not(:last-child) {
+    margin-right: 45px; }
+
+.mainBanner {
+  height: 610px;
+  background-color: #e8e8e8; }
+  .mainBanner .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: inherit;
+    background-image: url(../assets/topHeaderBack.png);
+    background-repeat: no-repeat;
+    background-position: right 10px; }
+    .mainBanner .container .brandHeadingsContain {
+      border-left: 10px solid #f16d7f;
+      overflow: hidden;
+      padding-left: 10px; }
+      .mainBanner .container .brandHeadingsContain h1 {
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 41px; }
+      .mainBanner .container .brandHeadingsContain h2 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 32px;
+        margin-top: 19px; }
+
+.offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .offers .partOffers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .offers .partOffers .smallOffer,
+    .offers .partOffers .bigOffer {
+      margin-top: 25px;
+      position: relative; }
+      .offers .partOffers .smallOffer .label,
+      .offers .partOffers .bigOffer .label {
+        text-transform: uppercase;
+        position: absolute;
+        top: 25px;
+        padding: 15px 20px;
+        background: white; }
+        .offers .partOffers .smallOffer .label .labelTop,
+        .offers .partOffers .bigOffer .label .labelTop {
+          font-size: 18px;
+          color: #222222;
+          font-weight: 700; }
+        .offers .partOffers .smallOffer .label .labelBottom,
+        .offers .partOffers .bigOffer .label .labelBottom {
+          font-size: 30px;
+          color: #f16d7f;
+          font-weight: 900; }
