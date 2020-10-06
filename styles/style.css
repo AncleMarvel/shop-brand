@@ -99,6 +99,8 @@ body {
     color: #222222; }
   .nav .navLink:not(:last-child) {
     margin-right: 45px; }
+  .nav .navLink:hover {
+    color: #f16d7f; }
 
 .mainBanner {
   height: 610px;
@@ -167,3 +169,295 @@ body {
           font-size: 30px;
           color: #f16d7f;
           font-weight: 900; }
+
+.featuredTitle {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 70px; }
+  .featuredTitle h6 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; }
+  .featuredTitle p {
+    text-align: center;
+    color: #9f9f9f;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 50px; }
+  .featuredTitle .featuredItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .featuredTitle .featuredItems .featuredItem {
+      height: 370px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .featuredTitle .featuredItems .featuredItem .itemName {
+        padding-left: 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #222222;
+        font-weight: 700;
+        max-height: 2.4em;
+        overflow: hidden; }
+      .featuredTitle .featuredItems .featuredItem .itemPrice {
+        padding: 0 0 20px 10px;
+        color: #f16d7f;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .featuredTitle .featuredItems .featuredItem .featuredImg {
+        height: 280px;
+        position: relative; }
+        .featuredTitle .featuredItems .featuredItem .featuredImg .featuredBuy {
+          height: inherit;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          display: none;
+          position: absolute; }
+          .featuredTitle .featuredItems .featuredItem .featuredImg .featuredBuy button {
+            padding: 15px;
+            border: 1px solid #ffffff;
+            background: none;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            cursor: pointer; }
+    .featuredTitle .featuredItems .featuredItem:nth-child(n+5) {
+      margin-top: 27px; }
+    .featuredTitle .featuredItems .featuredItem:hover {
+      -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16); }
+    .featuredTitle .featuredItems .featuredItem:hover .featuredBuy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+  .featuredTitle .featuredAllProductsBtn {
+    padding: 18px 24px;
+    background: #f16d7f;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 60px 0; }
+    .featuredTitle .featuredAllProductsBtn img {
+      margin-left: 10px; }
+
+.featuredBuy {
+  display: none; }
+
+.offerForWomen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 530px; }
+  .offerForWomen .offerForWomenBanner {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: inherit;
+    width: 767px;
+    background: url(../assets/offerForWomen.jpg) no-repeat;
+    background-size: cover;
+    position: relative; }
+    .offerForWomen .offerForWomenBanner .offerText {
+      position: absolute;
+      top: 146px;
+      left: 40px;
+      color: #ffffff; }
+    .offerForWomen .offerForWomenBanner .offerText div:first-child {
+      font-size: 54px;
+      font-weight: 700; }
+    .offerForWomen .offerForWomenBanner .offerText div:first-child span {
+      color: #f16d7f; }
+    .offerForWomen .offerForWomenBanner .offerText div:last-child {
+      font-size: 32px; }
+  .offerForWomen .offerDetails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #222224;
+    color: #fbfbfb; }
+    .offerForWomen .offerDetails .offerUnit {
+      padding: 30px 30px 30px 110px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+      .offerForWomen .offerDetails .offerUnit .offerDetailsHead {
+        font-size: 20px;
+        font-weight: 700; }
+      .offerForWomen .offerDetails .offerUnit .offerDetailsText {
+        line-height: 24px;
+        margin-top: 15px;
+        text-align: justify;
+        font-size: 14px; }
+    .offerForWomen .offerDetails .offerUnit:first-child {
+      background: url(../assets/offerDetails1.png) no-repeat 36px 30px; }
+    .offerForWomen .offerDetails .offerUnit:nth-child(2) {
+      background: url(../assets/offerDetails2.png) no-repeat 36px 30px; }
+    .offerForWomen .offerDetails .offerUnit:last-child {
+      background: url(../assets/offerDetails3.png) no-repeat 36px 30px; }
+
+.subscribeWrap {
+  margin-top: 100px;
+  height: 438px;
+  background: url(../assets/subscribe.jpg) no-repeat center bottom, #ccc;
+  background-blend-mode: overlay;
+  background-size: cover; }
+  .subscribeWrap .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: inherit; }
+    .subscribeWrap .subscribe .reviews,
+    .subscribeWrap .subscribe .subscribeRight {
+      width: calc(100% - 1px); }
+    .subscribeWrap .subscribe .reviews {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .subscribeWrap .subscribe .reviews .reviewUnit {
+        width: 500px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitLeft {
+          width: 83px; }
+        .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight {
+          width: 386px; }
+          .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight blockquote {
+            margin: 0;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 26px;
+            font-weight: 700; }
+          .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewName {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #f16d7f; }
+          .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewFrom {
+            color: #222224;
+            font-size: 12px;
+            font-weight: 300; }
+          .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewsSwitch {
+            width: 140px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin-top: 40px; }
+            .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewsSwitch div {
+              width: 38px;
+              height: 4px;
+              background-color: #d6d6d6; }
+            .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewsSwitch div:hover {
+              background-color: #f16d7f;
+              cursor: pointer; }
+    .subscribeWrap .subscribe .subscribeDivider {
+      width: 1px;
+      background: #e3e3e3; }
+    .subscribeWrap .subscribe .subscribeRight {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .subscribeWrap .subscribe .subscribeRight .subscribeRightHead {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #222224; }
+      .subscribeWrap .subscribe .subscribeRight .subscribeRightText {
+        margin: 10px 0 35px; }
+      .subscribeWrap .subscribe .subscribeRight .subscribeForm {
+        height: 46px; }
+        .subscribeWrap .subscribe .subscribeRight .subscribeForm input {
+          height: inherit;
+          width: 334px;
+          border: none;
+          outline: none;
+          padding: 0 28px;
+          font-weight: 700;
+          background-color: #e1e1e1;
+          border-top-left-radius: 23px;
+          border-bottom-left-radius: 23px;
+          float: left; }
+        .subscribeWrap .subscribe .subscribeRight .subscribeForm button {
+          background-color: #f16d7f;
+          border-top-right-radius: 23px;
+          border-bottom-right-radius: 23px;
+          color: white;
+          border: none;
+          height: inherit;
+          padding: 0 20px;
+          outline: none;
+          cursor: pointer; }
