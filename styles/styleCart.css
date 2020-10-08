@@ -208,3 +208,36 @@ footer {
     .copyrightsRight a i:hover {
       color: white;
       background: #f16d7f; }
+
+.newArrivalsWrap {
+  height: 148px;
+  background-color: #f8f3f4; }
+
+.newArrivals {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.h3-arrivals {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 0.83;
+  color: #f16d7f; }
+
+.arrivalsLink {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  color: #636363; }
+
+.arrivalsLink:last-child {
+  font-weight: bold;
+  color: #f16d7f; }
