@@ -32,3 +32,39 @@
     }
 }
 
+.woomenCollectionWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1140px;
+    height: 730px;
+    position: relative;
+    top: -100px;
+    border: 1px solid #eaeaea;
+    ;
+    background-color: white;
+}
+
+.h3-woomenCollaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71;
+    color: #f16d7f;
+    border-bottom: solid 1px #eaeaea;
+    padding: 73px 0 15px 0;
+    margin-bottom: 18px;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 73px + 23 + (15 - 1); //h3-wC(pdTOP) + ()h3-wC(w) + (h3-wC(pdBOT) - 1)
+        width: 80px;
+        height: 3px;
+        background-color: #ef5b70;
+    }
+}
+
