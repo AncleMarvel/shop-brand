@@ -77,20 +77,93 @@
             <h2 class="h2-moschino">
                 MOSCHINO CHEAP AND CHIC
             </h2>
-            <p class="mochinoDesc">
+            <p class="moschinoDesc">
                 Compellingly actualize fully researched processes before proactive outsourcing.
                 Progressively syndicate collaborative architectures before cutting-edge services.
                 Completely visualize parallel core competencies rather than exceptional portals.
             </p>
             <div class="moschinoCharacteristics">
-                <span class="mChar">MATERIAl</span>
+                <span class="mChar">MATERIAL:</span>
                 <spam class="mCharValue">COTTON</spam>
-                <span class="mChar">DESIGNER</span>
+                <div class="separator"></div> <!-- Спорное решение, но в минимум строк -->
+                <span class="mChar">DESIGNER:</span>
                 <spam class="mCharValue">BINBURHAN</spam>
             </div>
             <span class="price">&dollar;561</span>
         </section>
+        <form action="" class="choosing">
+            <div class="inputsWrap">
+                <div class="inputFlex">
+                    <label for="color">CHOOSE COLOR</label>
+                    <select name="color" id="color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="inputFlex">
+                    <label for="size">CHOOSE SIZE</label>
+                    <select name="size" id="size">
+                        <option value="xxl">XXL</option>
+                        <option value="xl">XL</option>
+                        <option value="l">L</option>
+                    </select>
+                </div>
+                <div class="inputFlex">
+                    <label for="quantity">QUANTITY</label>
+                    <input type="number" id="quantity" placeholder="2" name="quatity">
+                </div>
+            </div>
+            <button>
+                <img src="assets/cartPink.png" alt="cart">
+                Add to Cart
+            </button>
+        </form>
     </main>
+
+    <!-- YOU LIKE ... -->
+    <h3 class="h3-youLike">
+        YOU MAY LIKE ALSO
+    </h3>
+    <div class="container featuredItems">
+        <article class="featuredItem">
+            <div class="featuredImg">
+                <div class="featuredBuy"><button><img src="assets/addToCart.png" alt="addToCart">Add to
+                        Cart</button></div>
+                <img src="assets/featuredItem1.jpg" alt="featuredItem" class="featuredProduct">
+            </div>
+            <h3 class="itemName">MANGO PEOPE T-SHIRT</h3>
+            <span class="itemPrice">&#36; 52.00</span>
+        </article>
+        <article class="featuredItem">
+            <div class="featuredImg">
+                <div class="featuredBuy"><button><img src="assets/addToCart.png" alt="addToCart">Add to
+                        Cart</button></div>
+                <img src="assets/featuredItem2.jpg" alt="featuredItem" class="featuredProduct">
+            </div>
+            <h3 class="itemName">MANGO PEOPE T-SHIRT</h3>
+            <span class="itemPrice">&#36; 52.00</span>
+        </article>
+        <article class="featuredItem">
+            <div class="featuredImg">
+                <div class="featuredBuy"><button><img src="assets/addToCart.png" alt="addToCart">Add to
+                        Cart</button></div>
+                <img src="assets/featuredItem3.jpg" alt="featuredItem" class="featuredProduct">
+            </div>
+            <h3 class="itemName">MANGO PEOPE T-SHIRT</h3>
+            <span class="itemPrice">&#36; 52.00</span>
+        </article>
+        <article class="featuredItem">
+            <div class="featuredImg">
+                <div class="featuredBuy"><button><img src="assets/addToCart.png" alt="addToCart">Add to
+                        Cart</button></div>
+                <img src="assets/featuredItem4.jpg" alt="featuredItem" class="featuredProduct">
+            </div>
+            <h3 class="itemName">MANGO PEOPE T-SHIRT</h3>
+            <span class="itemPrice">&#36; 52.00</span>
+        </article>
+    </div>
+
 
     <!-- SUBSCRIBE -->
     <div class="subscribeWrap">
