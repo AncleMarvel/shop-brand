@@ -142,6 +142,35 @@
             display: flex;
             flex-direction: column;
 
+            &:not(:last-child) {
+                margin-right: 90px;
+            }
+
+            .chooseColor {
+                position: relative;
+                display: inherit;
+                flex-direction: inherit;
+            }
+
+            .chooseColor::before {
+                content: " ";
+                width: 10px;
+                height: 10px;
+                background: red;
+                box-shadow: 0 -200px 100px -120px crimson inset;
+                animation: background 3s infinite alternate;
+                position: absolute;
+                top: 12px;
+                left: 5px;
+            }
+
+            @keyframes background {
+                20% {
+                    background: blue;
+                    box-shadow: 0 -200px 100px -100px green inset;
+                }
+            }
+
             label {
                 font-size: 14px;
                 font-weight: bold;
@@ -154,28 +183,10 @@
             input {
                 width: 144px;
                 height: 35px;
-                padding: 12px 0 12px 15px;
+                padding: 0 15px;
                 border: 1px solid #eaeaea;
-                font-size: 10px;
+                font-size: 15px;
                 color: #bcbcbc;
-            }
-
-            &:not(:last-child) {
-                margin-right: 90px;
-            }
-        }
-
-        .inputFlex:first-child {
-            position: relative;
-
-            label::after {
-                content: " ";
-                width: 10px;
-                height: 10px;
-                background-color: #ef5b70;
-                position: absolute;
-                top: 50px;
-                left: 5px;
             }
         }
     }
@@ -196,6 +207,11 @@
 
         img {
             padding-right: 10px;
+        }
+
+        &:hover {
+            background-color: #eb566d5b;
+            border: solid 1px #eb566d5b;
         }
     }
 }

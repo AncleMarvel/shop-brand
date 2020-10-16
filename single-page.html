@@ -84,10 +84,10 @@
             </p>
             <div class="moschinoCharacteristics">
                 <span class="mChar">MATERIAL:</span>
-                <spam class="mCharValue">COTTON</spam>
+                <span class="mCharValue">COTTON</span>
                 <div class="separator"></div> <!-- Спорное решение, но в минимум строк -->
                 <span class="mChar">DESIGNER:</span>
-                <spam class="mCharValue">BINBURHAN</spam>
+                <span class="mCharValue">BINBURHAN</span>
             </div>
             <span class="price">&dollar;561</span>
         </section>
@@ -95,11 +95,13 @@
             <div class="inputsWrap">
                 <div class="inputFlex">
                     <label for="color">CHOOSE COLOR</label>
-                    <select name="color" id="color">
-                        <option value="red">Red</option>
-                        <option value="green">Green</option>
-                        <option value="blue">Blue</option>
-                    </select>
+                    <div class="chooseColor">
+                        <select name="color" id="color">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="inputFlex">
                     <label for="size">CHOOSE SIZE</label>
@@ -111,7 +113,7 @@
                 </div>
                 <div class="inputFlex">
                     <label for="quantity">QUANTITY</label>
-                    <input type="number" id="quantity" placeholder="2" name="quatity">
+                    <input type="number" id="quantity" placeholder="2" name="quatity" min="1" max="10">
                 </div>
             </div>
             <button>
