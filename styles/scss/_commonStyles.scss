@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 
 $widthContainer: 1140px;
+$firstMediaScreen: 1040px;
+$secondMediaScreen: 745px;
+$thirdMediaScreen: 507px;
 
 body {
     font-family: 'Lato', sans-serif;
 }
 
 .container {
-    width: $widthContainer;
+    max-width: $widthContainer;
     margin: 0 auto;
 }
 
 .header {
-    height: 100px;
-    width: 1140px;
+    padding: 20px;
+    max-width: 1140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,6 +83,7 @@ body {
     .headerCart {
         // width: 32px;
         // height: 29px;
+        display: block;
         margin-left: auto;
         margin-right: 25px;
     }
@@ -89,6 +93,27 @@ body {
         background-color: #f16d7f;
         color: white;
         border: none;
+    }
+
+    @media (max-width: $firstMediaScreen) {
+        & {
+            width: auto;
+            margin: auto;
+        }
+    }
+
+    @media (max-width: $secondMediaScreen) {
+        & {
+            flex-direction: column;
+        }
+
+        .headerCart,
+        .search,
+        .btnMyAccount {
+            margin: 5px auto;
+        }
+
+
     }
 }
 
@@ -114,13 +139,37 @@ body {
     .navLink:hover {
         color: #f16d7f;
     }
+
+    @media (max-width: 745px) {
+        & {
+            height: 100px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.footer {
+    padding: 0 20px;
 }
 
 footer {
-    margin-top: 100px !important;
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media (max-width: $firstMediaScreen) {
+        & {
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: $thirdMediaScreen) {
+        & {
+            flex-direction: column;
+        }
+    }
 }
 
 .footerBrand {
@@ -155,10 +204,16 @@ footer {
     .footerBrandText1 {
         margin: 30px 0;
     }
+
+    @media (max-width: $firstMediaScreen) {
+        & {
+            width: 100%;
+        }
+    }
 }
 
 .footerColumn {
-    padding-top: 15px;
+    padding-top: 40px;
 
     h2 {
         margin: 0 0 30px;
@@ -180,6 +235,18 @@ footer {
 
     a:not(:last-child) {
         margin-bottom: 25px;
+    }
+
+    @media (max-width: $thirdMediaScreen) {
+        & {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h2 {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -262,6 +329,12 @@ footer {
                         font-style: italic;
                         line-height: 26px;
                         font-weight: 700;
+
+                        @media (max-width: $thirdMediaScreen) {
+                            & {
+                                font-size: 14px;
+                            }
+                        }
                     }
 
                     .reviewName {
@@ -282,7 +355,7 @@ footer {
                         display: flex;
                         justify-content: space-between;
                         margin-top: 40px;
-                        
+
                         div {
                             width: 38px;
                             height: 4px;
@@ -294,6 +367,25 @@ footer {
                             cursor: pointer;
                         }
                     }
+
+                    @media (max-width: $thirdMediaScreen) {
+                        & {
+                            width: 225px;
+                        }
+                    }
+                }
+
+                @media (max-width: $thirdMediaScreen) {
+                    & {
+                        justify-content: space-around;
+                    }
+                }
+            }
+
+            @media (max-width: $firstMediaScreen) {
+                & {
+                    justify-content: center;
+                    margin-bottom: 50px;
                 }
             }
         }
@@ -346,6 +438,34 @@ footer {
                     outline: none;
                     cursor: pointer;
                 }
+
+                @media (max-width: $thirdMediaScreen) {
+                    input {
+                        width: 200px;
+                    }
+
+                    button {
+                        padding: 0 5px;
+                    }
+                }
+            }
+
+            @media (max-width: $thirdMediaScreen) {
+                .subscribeRightHead {
+                    font-size: 19px;
+                }
+
+                .subscribeRightText {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @media (max-width: $firstMediaScreen) {
+            & {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -366,6 +486,14 @@ $bcg-color_NewArrivalsWrap: #f8f3f4;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $secondMediaScreen) {}
+
+    & {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }
 
 .h3-arrivals {

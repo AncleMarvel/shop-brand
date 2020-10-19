@@ -3,12 +3,12 @@ body {
   font-family: 'Lato', sans-serif; }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto; }
 
 .header {
-  height: 100px;
-  width: 1140px;
+  padding: 20px;
+  max-width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,6 +71,7 @@ body {
       background: none;
       border-left: 1px solid #e6e6e6; }
   .header .headerCart {
+    display: block;
     margin-left: auto;
     margin-right: 25px; }
   .header .btnMyAccount {
@@ -78,6 +79,20 @@ body {
     background-color: #f16d7f;
     color: white;
     border: none; }
+  @media (max-width: 1040px) {
+    .header {
+      width: auto;
+      margin: auto; } }
+  @media (max-width: 745px) {
+    .header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .header .headerCart,
+    .header .search,
+    .header .btnMyAccount {
+      margin: 5px auto; } }
 
 .nav {
   border-top: 1px solid #ececec;
@@ -101,9 +116,17 @@ body {
     margin-right: 45px; }
   .nav .navLink:hover {
     color: #f16d7f; }
+  @media (max-width: 745px) {
+    .nav {
+      height: 100px;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.footer {
+  padding: 0 20px; }
 
 footer {
-  margin-top: 100px !important;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,6 +136,17 @@ footer {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start; }
+  @media (max-width: 1040px) {
+    footer {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-top: 50px; } }
+  @media (max-width: 507px) {
+    footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .footerBrand {
   width: 427px;
@@ -140,9 +174,12 @@ footer {
         color: #f16d7f; }
   .footerBrand .footerBrandText1 {
     margin: 30px 0; }
+  @media (max-width: 1040px) {
+    .footerBrand {
+      width: 100%; } }
 
 .footerColumn {
-  padding-top: 15px; }
+  padding-top: 40px; }
   .footerColumn h2 {
     margin: 0 0 30px;
     font-size: 18px;
@@ -157,6 +194,18 @@ footer {
     color: #f16d7f; }
   .footerColumn a:not(:last-child) {
     margin-bottom: 25px; }
+  @media (max-width: 507px) {
+    .footerColumn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .footerColumn h2 {
+        width: 100%; } }
 
 .copyrights {
   height: 80px;
@@ -248,6 +297,9 @@ footer {
             font-style: italic;
             line-height: 26px;
             font-weight: 700; }
+            @media (max-width: 507px) {
+              .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight blockquote {
+                font-size: 14px; } }
           .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewName {
             margin-top: 20px;
             font-size: 16px;
@@ -273,6 +325,19 @@ footer {
             .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight .reviewsSwitch div:hover {
               background-color: #f16d7f;
               cursor: pointer; }
+          @media (max-width: 507px) {
+            .subscribeWrap .subscribe .reviews .reviewUnit .reviewUnitRight {
+              width: 225px; } }
+        @media (max-width: 507px) {
+          .subscribeWrap .subscribe .reviews .reviewUnit {
+            -ms-flex-pack: distribute;
+            justify-content: space-around; } }
+      @media (max-width: 1040px) {
+        .subscribeWrap .subscribe .reviews {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin-bottom: 50px; } }
     .subscribeWrap .subscribe .subscribeDivider {
       width: 1px;
       background: #e3e3e3; }
@@ -319,6 +384,28 @@ footer {
           padding: 0 20px;
           outline: none;
           cursor: pointer; }
+        @media (max-width: 507px) {
+          .subscribeWrap .subscribe .subscribeRight .subscribeForm input {
+            width: 200px; }
+          .subscribeWrap .subscribe .subscribeRight .subscribeForm button {
+            padding: 0 5px; } }
+      @media (max-width: 507px) {
+        .subscribeWrap .subscribe .subscribeRight .subscribeRightHead {
+          font-size: 19px; }
+        .subscribeWrap .subscribe .subscribeRight .subscribeRightText {
+          font-size: 14px; } }
+    @media (max-width: 1040px) {
+      .subscribeWrap .subscribe {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; } }
 
 .newArrivalsWrap {
   height: 148px;
@@ -335,6 +422,10 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .newArrivals {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px; }
 
 .h3-arrivals {
   font-size: 24px;
