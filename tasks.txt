@@ -1,10 +1,4 @@
-+1. Пофиксить квадрат, поставить к инпуту, а не лейблу
-+2. Пофиксить высоту строки в инпутах
-+3. Добавить max quantity
-+4. Анимировать кнопку Add to cart
--*5. Добавить фильтр для quantity, число не более 10
-
-1. Fidex square (animated bcg); 
-2. Fixed line-h for inputs;
-3. Added minMax quantity;
-4. Animated Add to Cart button;
+Changed:
+    1. Scss moved to a separate folder;
+Future:
+    Добавить фильтр для quantity, число не более 10 (Single page)
