@@ -432,76 +432,62 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
 
-.mainBanner {
-  height: 610px;
-  background-color: #e8e8e8; }
-  .mainBanner .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: inherit;
-    background-image: url(../assets/topHeaderBack.png);
-    background-repeat: no-repeat;
-    background-position: right 10px; }
-    .mainBanner .container .brandHeadingsContain {
-      border-left: 10px solid #f16d7f;
-      overflow: hidden;
-      padding-left: 10px; }
-      .mainBanner .container .brandHeadingsContain h1 {
-        font-weight: 900;
-        font-size: 60px;
-        line-height: 41px; }
-      .mainBanner .container .brandHeadingsContain h2 {
-        font-weight: 400;
-        font-size: 40px;
-        line-height: 32px;
-        margin-top: 19px; }
-
-.offers {
+.sliderWrap {
+  width: 100%;
+  height: 777px;
+  background-image: url(../assets/slider1.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
-  .offers .partOffers {
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .sliderWrap .slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
-    .offers .partOffers .smallOffer,
-    .offers .partOffers .bigOffer {
-      margin-top: 25px;
-      position: relative; }
-      .offers .partOffers .smallOffer .label,
-      .offers .partOffers .bigOffer .label {
-        text-transform: uppercase;
-        position: absolute;
-        top: 25px;
-        padding: 15px 20px;
-        background: white; }
-        .offers .partOffers .smallOffer .label .labelTop,
-        .offers .partOffers .bigOffer .label .labelTop {
-          font-size: 18px;
-          color: #222222;
-          font-weight: 700; }
-        .offers .partOffers .smallOffer .label .labelBottom,
-        .offers .partOffers .bigOffer .label .labelBottom {
-          font-size: 30px;
-          color: #f16d7f;
-          font-weight: 900; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    color: #fff;
+    background: #d8d8d8;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s; }
+    .sliderWrap .slide:hover {
+      width: 55px;
+      color: #4d4d4d;
+      background: #bfbfbf; }
 
-.featuredTitle {
-  margin-top: 70px;
+.woomenCollectionWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 1140px;
+  height: 730px;
+  position: relative;
+  top: -100px;
+  border: 1px solid #eaeaea;
+  background-color: white; }
+
+.h3-woomenCollaction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,88 +501,183 @@ footer {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 70px; }
-  .featuredTitle h6 {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center; }
-  .featuredTitle p {
-    text-align: center;
-    color: #9f9f9f;
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 50px; }
-  .featuredTitle .featuredAllProductsBtn {
-    padding: 18px 24px;
-    background: #f16d7f;
-    border: none;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 60px 0; }
-    .featuredTitle .featuredAllProductsBtn img {
-      margin-left: 10px; }
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  color: #f16d7f;
+  border-bottom: solid 1px #eaeaea;
+  padding: 73px 0 15px 0;
+  margin-bottom: 18px; }
+  .h3-woomenCollaction::after {
+    content: " ";
+    position: absolute;
+    top: 110px;
+    width: 80px;
+    height: 3px;
+    background-color: #ef5b70; }
 
-.featuredBuy {
-  display: none; }
-
-.offerForWomen {
+.moschino {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 530px; }
-  .offerForWomen .offerForWomenBanner {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    height: inherit;
-    width: 767px;
-    background: url(../assets/offerForWomen.jpg) no-repeat;
-    background-size: cover;
-    position: relative; }
-    .offerForWomen .offerForWomenBanner .offerText {
-      position: absolute;
-      top: 146px;
-      left: 40px;
-      color: #ffffff; }
-    .offerForWomen .offerForWomenBanner .offerText div:first-child {
-      font-size: 54px;
-      font-weight: 700; }
-    .offerForWomen .offerForWomenBanner .offerText div:first-child span {
-      color: #f16d7f; }
-    .offerForWomen .offerForWomenBanner .offerText div:last-child {
-      font-size: 32px; }
-  .offerForWomen .offerDetails {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.h2-moschino {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.33;
+  color: #4d4d4d;
+  margin-bottom: 67px; }
+
+.moschinoDesc {
+  width: 618px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: center;
+  color: #5e5e5e;
+  margin-bottom: 28px; }
+
+.moschinoCharacteristics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 334px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 37px; }
+
+.separator {
+  width: 44px; }
+
+.mChar,
+.mCharValue {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: center;
+  color: #b9b9b9; }
+
+.mCharValue {
+  color: #2f2f2f; }
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ef5b70; }
+
+.choosing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 43px;
+  padding: 63px 52px;
+  border-top: 1px solid #eaeaea; }
+  .choosing .inputsWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .choosing .inputsWrap .inputFlex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .choosing .inputsWrap .inputFlex:not(:last-child) {
+        margin-right: 90px; }
+      .choosing .inputsWrap .inputFlex .chooseColor {
+        position: relative;
+        display: inherit;
+        -webkit-box-orient: inherit;
+        -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+        flex-direction: inherit; }
+      .choosing .inputsWrap .inputFlex .chooseColor::before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        background: red;
+        -webkit-box-shadow: 0 -200px 100px -120px crimson inset;
+        box-shadow: 0 -200px 100px -120px crimson inset;
+        -webkit-animation: background 3s infinite alternate;
+        animation: background 3s infinite alternate;
+        position: absolute;
+        top: 12px;
+        left: 5px; }
+
+@-webkit-keyframes background {
+  20% {
+    background: blue;
+    -webkit-box-shadow: 0 -200px 100px -100px green inset;
+    box-shadow: 0 -200px 100px -100px green inset; } }
+
+@keyframes background {
+  20% {
+    background: blue;
+    -webkit-box-shadow: 0 -200px 100px -100px green inset;
+    box-shadow: 0 -200px 100px -100px green inset; } }
+      .choosing .inputsWrap .inputFlex label {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.71;
+        color: #2f2f2f;
+        margin-bottom: 14px; }
+      .choosing .inputsWrap .inputFlex select,
+      .choosing .inputsWrap .inputFlex input {
+        width: 144px;
+        height: 35px;
+        padding: 0 15px;
+        border: 1px solid #eaeaea;
+        font-size: 15px;
+        color: #bcbcbc; }
+  .choosing button {
+    width: 100%;
+    height: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background-color: #222224;
-    color: #fbfbfb; }
-    .offerForWomen .offerDetails .offerUnit {
-      padding: 30px 30px 30px 110px;
-      -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-      flex-grow: 1; }
-      .offerForWomen .offerDetails .offerUnit .offerDetailsHead {
-        font-size: 20px;
-        font-weight: 700; }
-      .offerForWomen .offerDetails .offerUnit .offerDetailsText {
-        line-height: 24px;
-        margin-top: 15px;
-        text-align: justify;
-        font-size: 14px; }
-    .offerForWomen .offerDetails .offerUnit:first-child {
-      background: url(../assets/offerDetails1.png) no-repeat 36px 30px; }
-    .offerForWomen .offerDetails .offerUnit:nth-child(2) {
-      background: url(../assets/offerDetails2.png) no-repeat 36px 30px; }
-    .offerForWomen .offerDetails .offerUnit:last-child {
-      background: url(../assets/offerDetails3.png) no-repeat 36px 30px; }
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 28px;
+    background-color: #fff;
+    border: solid 1px #ef5b70;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef5b70; }
+    .choosing button img {
+      padding-right: 10px; }
+    .choosing button:hover {
+      background-color: #eb566d5b;
+      border: solid 1px #eb566d5b; }
+
+.h3-youLike {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 0.83;
+  text-align: center;
+  color: #4d4d4d;
+  padding-bottom: 72px; }
