@@ -1,1 +1,41 @@
 @import "commonStyles";
+
+.checkout {
+    margin: 90px auto;
+
+    @media (max-width: $firstMediaScreen) {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+.checkoutDetails {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+
+    summary {
+        position: relative;
+        outline: none;
+        left: 1px;
+    }
+}
+
+.checkoutHeader {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    background: white;
+
+    &:hover {
+        color: #f16d7f;
+        cursor: pointer;
+    }
+}
+
+.checkoutData {
+    margin-top: 40px;
+}
