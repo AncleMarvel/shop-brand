@@ -553,3 +553,116 @@ footer {
 
 .checkoutData {
   margin-top: 40px; }
+
+.shippingDetailsWrap {
+  padding: 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.shippingDetailsLeft button {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 50px;
+  background: none;
+  border: 1px solid #eaeaea;
+  cursor: pointer;
+  margin-top: 20px; }
+
+.shippingDetailsLeft,
+.shippingDetailsRight {
+  width: calc(50% - 15px); }
+
+.shippingDetailsHead {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+.shippingDetailsDesc {
+  color: #b3b2b2;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+#reg1,
+#reg2 {
+  display: none; }
+
+label[for="reg1"],
+label[for="reg2"] {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  background: url(../assets/regEmpty.png) no-repeat left center; }
+
+#reg1:checked + label,
+#reg2:checked + label {
+  background: url(../assets/regChecked.png) no-repeat left center; }
+
+.shippingRegisterHead {
+  color: #222222;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px; }
+
+.shippingRegisterPoint {
+  background: url(../assets/arrows.png) no-repeat left center;
+  padding-left: 12px;
+  color: #b3b2b2;
+  font-size: 13px;
+  margin-bottom: 15px; }
+
+.shippingLoginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .shippingLoginForm label {
+    color: #222222;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700; }
+    .shippingLoginForm label span {
+      color: #ff0d0d;
+      font-size: 17px; }
+  .shippingLoginForm input {
+    border: 1px solid #eaeaea;
+    padding: 14px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 65%; }
+  .shippingLoginForm button {
+    border: 1px solid #eaeaea;
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: none;
+    padding: 20px 50px;
+    cursor: pointer; }
+
+.shippingRequiredLabel {
+  color: #ff0d0d;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.shippingFormForgot {
+  margin-left: 30px;
+  color: #222222;
+  font-size: 14px;
+  line-height: 20px; }
+
+.detailsText {
+  margin-top: 40px; }
