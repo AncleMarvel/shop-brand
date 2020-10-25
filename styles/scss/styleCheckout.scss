@@ -44,6 +44,12 @@
     padding: 0 35px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: $thirdMediaScreen) {
+        & {
+            flex-direction: column;
+        }
+    }
 }
 
 .shippingDetailsLeft {
@@ -65,14 +71,32 @@
 .shippingDetailsLeft,
 .shippingDetailsRight {
     width: calc(50% - 15px);
+
+    @media (max-width: $thirdMediaScreen) {
+
+        &,
+        .shippingDetailsRight {
+            width: 100%;
+        }
+    }
 }
 
 .shippingDetailsHead {
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 0;
     margin-bottom: 15px;
+}
+
+@media (max-width: $thirdMediaScreen) {
+
+    .additionHeader {
+        margin-top: 40px;
+    }
+}
+
+.shippingDetailsHead:nth-child(2n) {
+    margin-top: 40px;
 }
 
 .shippingDetailsDesc {
@@ -138,6 +162,12 @@ label[for="reg2"] {
         outline: none;
         margin-bottom: 20px;
         width: 65%;
+
+        @media (max-width: $thirdMediaScreen) {
+            & {
+                width: 100%;
+            }
+        }
     }
 
     button {
@@ -164,8 +194,21 @@ label[for="reg2"] {
     color: #222222;
     font-size: 14px;
     line-height: 20px;
+
+    @media (max-width: $mobileM) {
+        & {
+            margin: 20px auto;
+        }
+    }
 }
 
 .detailsText {
     margin-top: 40px;
+}
+
+@media (max-width: $mobileM) {
+    .loginAndForgotPassWrap {
+        display: flex;
+        flex-direction: column;
+    }
 }

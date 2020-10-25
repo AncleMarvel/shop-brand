@@ -562,6 +562,12 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media (max-width: 507px) {
+    .shippingDetailsWrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .shippingDetailsLeft button {
   color: #4a4a4a;
@@ -577,13 +583,25 @@ footer {
 .shippingDetailsLeft,
 .shippingDetailsRight {
   width: calc(50% - 15px); }
+  @media (max-width: 507px) {
+    .shippingDetailsLeft,
+    .shippingDetailsLeft .shippingDetailsRight,
+    .shippingDetailsRight,
+    .shippingDetailsRight .shippingDetailsRight {
+      width: 100%; } }
 
 .shippingDetailsHead {
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 0;
   margin-bottom: 15px; }
+
+@media (max-width: 507px) {
+  .additionHeader {
+    margin-top: 40px; } }
+
+.shippingDetailsHead:nth-child(2n) {
+  margin-top: 40px; }
 
 .shippingDetailsDesc {
   color: #b3b2b2;
@@ -642,6 +660,9 @@ label[for="reg2"] {
     outline: none;
     margin-bottom: 20px;
     width: 65%; }
+    @media (max-width: 507px) {
+      .shippingLoginForm input {
+        width: 100%; } }
   .shippingLoginForm button {
     border: 1px solid #eaeaea;
     color: #4a4a4a;
@@ -663,6 +684,19 @@ label[for="reg2"] {
   color: #222222;
   font-size: 14px;
   line-height: 20px; }
+  @media (max-width: 376px) {
+    .shippingFormForgot {
+      margin: 20px auto; } }
 
 .detailsText {
   margin-top: 40px; }
+
+@media (max-width: 376px) {
+  .loginAndForgotPassWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
